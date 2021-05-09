@@ -5,9 +5,9 @@ class LifelineTest(unittest.TestCase):
     def test_get_name_fals(self):
         lifeline = Lifeline('Lifeline fals')
         self.assertEqual(lifeline.get_name_fals(), 'Lifeline fals')
-    def test_lifeline(self):
-        lifeline = Lifeline('Lifeline 1')
-        self.assertEqual(lifeline.nomeLifeline, 'Lifeline 1')
+    def test_lifelines(self):
+        lifelines = Lifeline('Lifeline 1')
+        self.assertEqual(lifelines.lifeline['nomeLifeline'], 'Lifeline 1')
 
     # def setUp(self):
     #     self.lifeline = Lifeline()

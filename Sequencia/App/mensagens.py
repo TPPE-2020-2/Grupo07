@@ -1,11 +1,21 @@
 import os.path
 import sys
 
+###### mover metodo ou atributo #######
 
 class Mensagem():
+
+    def __init__(self, name='', prob=0.0, source='', target=''):
+        self.name = name
+        self.prob = prob
+        self.source = source
+        self.target = target
+
+
+class AdicionarMensagem(Mensagem):
     arrayMensagem = []
 
-    def __init__(self, name="", prob=0.0, source="", target=""):
+    def __init__(self, name='', prob=0.0, source='', target=''):
         mensagem = {
             'name': name,
             'prob': prob,
@@ -13,31 +23,32 @@ class Mensagem():
             'target': target,
             'tipo': 'inicial'
         }
-        self.arrayMensagem.append(mensagem)
 
-    def addMensagem(self, mensagem):
         self.arrayMensagem.append(mensagem)
 
 
 class MensagemSincrona:
     def __init__(self, name="", prob=0.0, source="", target=""):
-        
+        try:
+            if not name or not prob or not source or not target:
+                raise Exception('MessageFormatException')
+        except Exception as error:
+            print('Falta um atributo', error)
 
-        mensagem = {
-            'name': name,
-            'prob': prob,
-            'source': source,
-            'target': target,
-            'tipo': 'Sincrona'
-        }
+        finally:
 
-        self.mensagem = mensagem
+            mensagem = {
+                'name': name,
+                'prob': prob,
+                'source': source,
+                'target': target,
+                'tipo': 'Sincrona'
+            }
 
-    try:
-       if not name or not prob or not source or not target:
-         raise Exception('MessageFormatException')
-    except Exception as error:
-        print('Falta um atributo', error)
+            self.mensagem = mensagem
+
+
+
 
 
 class MensagemAssincrona:
@@ -49,15 +60,17 @@ class MensagemAssincrona:
         except Exception as error:
             print('Falta um atributo', error)
 
-        mensagem = {
-            'name': name,
-            'prob': prob,
-            'source': source,
-            'target': target,
-            'tipo': 'Assincrona'
-        }
+        finally:
 
-        self.mensagem = mensagem
+            mensagem = {
+                'name': name,
+                'prob': prob,
+                'source': source,
+                'target': target,
+                'tipo': 'Assincrona'
+            }
+
+            self.mensagem = mensagem
 
 
 class MensagemResposta:
@@ -69,15 +82,17 @@ class MensagemResposta:
         except Exception as error:
             print('Falta um atributo', error)
 
-        mensagem = {
-            'name': name,
-            'prob': prob,
-            'source': source,
-            'target': target,
-            'tipo': 'Resposta'
-        }
+        finally:
 
-        self.mensagem = mensagem
+            mensagem = {
+                'name': name,
+                'prob': prob,
+                'source': source,
+                'target': target,
+                'tipo': 'Resposta'
+            }
+
+            self.mensagem = mensagem
 
 
 if __name__ == "__main__" and __package__ is None:

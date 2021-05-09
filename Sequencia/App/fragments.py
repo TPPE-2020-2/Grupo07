@@ -9,7 +9,7 @@ class Fragments():
             fragmento_opcional = {
                 'nome': nome,
                 'condicao_guarda': condicao_guarda,
-                'representedBy': DiagramaSequenci.nome_diagrama
+                'representedBy': representedBy
             }
             if condicao_guarda:
                 self.arrayFragments.append(fragmento_opcional)
