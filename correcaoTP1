@@ -1,0 +1,22 @@
+Observações:
+------------
+Não foram criadas classes de exceção conforme o enunciado pediu, mas sim
+lançados objetos da classe Exception com a mensagem informando qual objeto
+deveria ser lançado. Exceções não foram tratadas adequadamente. Testes
+parametrizados não foram criados. Embora o programa não execute, a estrutura de
+classes (atributos, métodos e associações) parece adequada para o propósito do
+trabalho.  
+
+Critérios de avaliação:
+-----------------------
+
+O programa funciona como deveria (30 %)? 20 pontos
+
+Testes parametrizados foram implementados (20%) ? 0 pontos.
+
+Classes de exceções foram implementadas? Excecoes foram lançadas e tratadas?
+Testes de excecoes foram implementados? (- 10% para cada exceção não
+implementada adequadamente, limitado a 50% da nota): 0 pontos.
+
+
+NOTA FINAL:  20 pontos. 
