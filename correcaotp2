@@ -1,0 +1,21 @@
+Observações:
+------------
+Testes quebrando na execução. 
+Foi apresentada apenas a refatoração
+
+As outras refatorações não foram apresentadas. 
+
+
+Critérios de avaliação:
+-----------------------
+
+Ref. 1 - mover método ou mover atributo (20 pontos): Ok - 20 pontos.
+
+Ref. 2 - extrair método (20 pontos): Ñ apresentado - 0 pontos.
+
+Ref. 3 - substituir método por objeto-método (30 pontos): Ñ apresentado - 0 pontos.
+
+Ref. 4 - substituir condicional por polimorfismo (30 pontos): Ñ apresentado - 0 pontos.
+
+
+NOTA FINAL: 20 pontos.
